@@ -15,8 +15,7 @@ module.exports = {
           loader: 'responsive-loader',
           options: {
             adapter: require('responsive-loader/sharp'),
-            quality: 100,
-            outputPath: './images'
+            quality: 100
           }
         }
       },
