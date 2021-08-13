@@ -6,7 +6,7 @@ A little node program to generate a set of srcset images
 
 1. `npm install`
 
-2. Place your original images in image folder
+2. Place your original images in the image folder
 
 3. Edit index.js
     1. Add path and desired output variables using syntax and from https://github.com/dazuaz/responsive-loader#usage
