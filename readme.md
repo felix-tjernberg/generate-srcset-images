@@ -1,6 +1,6 @@
 # generate-srcset-images
 
-A little node program to generate a set of srcset images
+Small program that generates a set of images and a value string for srcset attribute using webpack and responsive-loader
 
 ## Installation/Usage
 
