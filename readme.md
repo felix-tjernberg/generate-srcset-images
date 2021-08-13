@@ -10,7 +10,7 @@ A little node program to generate a set of srcset images
 
 3. Edit index.js
     1. Add path and desired output variables using syntax and from https://github.com/dazuaz/responsive-loader#usage
-    2. Add srcset string to output.json
+    2. Add srcset string to txtOutput object
 
 4. `npm run transform`
 
