@@ -1,5 +1,5 @@
 const path = require('path')
-const WebpackShellPluginNext = require('webpack-shell-plugin-next');
+const WebpackShellPluginNext = require('webpack-shell-plugin-next')
 
 module.exports = {
   devtool: false,
@@ -23,26 +23,27 @@ module.exports = {
       {
         exclude: /node_modules/,
         test: /\.js$/i,
-        loader: 'babel-loader',
+        loader: 'babel-loader'
       }
     ]
   },
   optimization: {
-    moduleIds: 'deterministic',
+    moduleIds: 'deterministic'
   },
   output: {
-    assetModuleFilename: 'image/[hash][ext][query]',
     clean: true,
     filename: './throwaway.js',
     path: path.join(__dirname, 'srcset-images')
   },
   resolve: {
     alias: {
-      image: './image',
-    },
+      image: './image'
+    }
   },
   plugins: [
-    new WebpackShellPluginNext({onBuildEnd: {scripts:['node srcset-images/throwaway.js']}})
+    new WebpackShellPluginNext({
+      onBuildEnd: { scripts: ['node srcset-images/throwaway.js'] }
+    })
   ],
   target: 'node'
 }

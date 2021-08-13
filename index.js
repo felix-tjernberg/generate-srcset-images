@@ -7,8 +7,11 @@ import testImage from 'image/test-image.png?sizes[]=300,sizes[]=600,sizes[]=1024
 // Add your image srcset string to txtOutput object
 txtOutput['test-image'] = testImage.srcSet
 
-fs.writeFile('./srcset-images/srcset.json', JSON.stringify(txtOutput), error => {
-  if (error)
-    console.log(error)
+fs.writeFile(
+  './srcset-images/srcset.json',
+  JSON.stringify(txtOutput),
+  (error) => {
+    if (error) console.log(error)
     return
-})
+  }
+)
