@@ -15,6 +15,7 @@ module.exports = {
           loader: 'responsive-loader',
           options: {
             adapter: require('responsive-loader/sharp'),
+            name: '[name]-[width].[ext]',
             quality: 100
           }
         }
@@ -34,15 +35,11 @@ module.exports = {
     filename: './throwaway.js',
     path: path.join(__dirname, 'srcset-images')
   },
-  resolve: {
-    alias: {
-      image: './image'
-    }
-  },
   plugins: [
     new WebpackShellPluginNext({
       onBuildEnd: { scripts: ['node srcset-images/throwaway.js'] }
     })
   ],
+  stats: 'errors-warnings',
   target: 'node'
 }
