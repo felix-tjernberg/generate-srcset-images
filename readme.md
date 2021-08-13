@@ -17,7 +17,7 @@ Small program that generates a set of images and a value string for srcset attri
 
 5. Output is now generated in /srcset-images (Delete throwaway.js)
 
-## Output folder structure
+## Sample output folder structure
 
 ```
 srcset-images/
