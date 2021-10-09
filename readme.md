@@ -19,7 +19,7 @@ Small program that generates a set of images and a value string for srcset attri
 
 ## Sample output folder structure
 
-```
+```txt
 srcset-images/
     ├── srcset.json
     ├── test-image-300.webp
